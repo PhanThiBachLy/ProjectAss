@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebStore.Models;
 
 namespace WebStore.Controllers
 {
     public class HomeController : Controller
     {
+        private StoreDbContext _context = new StoreDbContext();
+
         public ActionResult Index()
         {
-            return View();
+            var products = _context.Product.ToList();
+            return View(products);
         }
 
         public ActionResult About()

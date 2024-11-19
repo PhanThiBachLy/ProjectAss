@@ -6,20 +6,126 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .navbar {
+            background-color: #a8e6cf !important;
+        }
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-button {
+            display: flex;
+            align-items: center;
+        }
+        .nav-link, .navbar-brand {
+            color: #333 !important;
+        }
+
+        .nav-button {
+            background-color: transparent;
+            border: none;
+            padding: 8px 15px;
+            margin: 0 5px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+            .nav-button::before,
+            .nav-button::after {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                top: 0;
+                transition: all 0.3s ease;
+            }
+
+            .nav-button::before {
+                left: 0;
+            }
+
+            .nav-button::after {
+                right: 0;
+            }
+
+            .nav-button:hover {
+                background-color: white;
+                color: #333;
+                text-decoration: none;
+            }
+
+                .nav-button:hover::before,
+                .nav-button:hover::after {
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+        .welcome-text {
+            color: white;
+            margin: 0 10px;
+            padding: 8px 15px;
+            display: flex;
+            align-items: center;
+        }
+        .user-menu {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .welcome-text {
+            color: #333;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm">
         <div class="container">
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Store", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>
+                        @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-button" })
+                    </li>
+                    @if (Session["Role"] != null && Session["Role"].ToString() == "Admin")
+                    {
+                        <li>
+                            @Html.ActionLink("Manager", "Index", "Product", new { area = "" }, new { @class = "nav-button" })
+                        </li>
+                    }
+                </ul>
+                <ul class="navbar-nav">
+
+
+                    @if (Session["UserName"] != null)
+                    {
+                        <li>
+                            @Html.ActionLink("Cart", "Cart", "Home", new { area = "" }, new { @class = "nav-button" })
+                        </li>
+                        <li class="user-menu">
+                            <span class="welcome-text">Welcome, @Session["UserName"]</span>
+                            @Html.ActionLink("Logout", "Logout", "Account", new { area = "" }, new { @class = "nav-button" })
+                        </li>
+
+                    }
+                    else
+                    {
+                        <li>
+                            @Html.ActionLink("Login", "Login", "Account", new { area = "" }, new { @class = "nav-button" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Register", "Register", "Account", new { area = "" }, new { @class = "nav-button" })
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
