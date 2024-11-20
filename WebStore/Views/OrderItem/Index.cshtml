@@ -1,0 +1,47 @@
+﻿@model IEnumerable<WebStore.Models.OrderItem>
+
+@{
+    ViewBag.Title = "Order Items List";
+}
+
+<h2>Order Items</h2>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary">Add New Order</a>
+    <a href="@Url.Action("DailyRevenue")" class="btn btn-secondary">View Daily Revenue</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>User ID</th>
+            <th>Message for Seller</th>
+            <th>Shipping Address</th>
+            <th>Total Amount</th>
+            <th>Created Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var orderItem in Model)
+        {
+            <tr>
+                <td>@orderItem.OrderId</td>
+                <td>@orderItem.UserId</td>
+                <td>@orderItem.MessageForSeller</td>
+                <td>@orderItem.ShippingAddress</td>
+                <td>@orderItem.TotalAmount</td>
+                <td>@(orderItem.CreatedDate.HasValue ? orderItem.CreatedDate.Value.ToString("g") : "N/A")</td>
+                <td>
+                    @using (Html.BeginForm("OrderDetails", "OrderItem", FormMethod.Get))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.Hidden("id", orderItem.OrderId)
+                        <button type="submit" class="btn btn-info">View Order Details</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

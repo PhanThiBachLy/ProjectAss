@@ -104,7 +104,13 @@
                     @if (Session["Role"] != null && Session["Role"].ToString() == "Admin")
                     {
                         <li>
-                            @Html.ActionLink("Manager", "Index", "Product", new { area = "" }, new { @class = "nav-button" })
+                            @Html.ActionLink("Product", "Index", "Product", new { area = "" }, new { @class = "nav-button" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Customer", "Index", "User", new { area = "" }, new { @class = "nav-button" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Order History", "Index", "OrderItem", new { area = "" }, new { @class = "nav-button" })
                         </li>
                     }
                 </ul>

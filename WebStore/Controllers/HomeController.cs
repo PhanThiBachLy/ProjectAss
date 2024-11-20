@@ -15,6 +15,7 @@ namespace WebStore.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.Categories = _context.Category.ToList();
             var products = _context.Product.Include(p => p.Category).ToList();
             return View(products);
         }
@@ -31,6 +32,69 @@ namespace WebStore.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        [HttpPost]
+        public JsonResult GetProductList(string searchTerm, string sortOrder, int? categoryId, int? page = 1)
+        {
+            var pageSize = 8;
+            var query = _context.Product.Include(p => p.Category).AsQueryable();
+
+            // Apply search
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query = query.Where(p => p.ProductName.Contains(searchTerm) ||
+                                       p.Description.Contains(searchTerm));
+            }
+
+            // Apply category filter
+            if (categoryId.HasValue)
+            {
+                query = query.Where(p => p.CategoryId == categoryId);
+            }
+
+            // Apply sorting
+            switch (sortOrder)
+            {
+                case "priceAsc":
+                    query = query.OrderBy(p => p.Price);
+                    break;
+                case "priceDesc":
+                    query = query.OrderByDescending(p => p.Price);
+                    break;
+                case "nameAsc":
+                    query = query.OrderBy(p => p.ProductName);
+                    break;
+                case "nameDesc":
+                    query = query.OrderByDescending(p => p.ProductName);
+                    break;
+                case "ratingDesc":
+                    query = query.OrderByDescending(p => p.Rating);
+                    break;
+                default:
+                    query = query.OrderBy(p => p.ProductId);
+                    break;
+            }
+
+            var products = query
+                .Skip((page.Value - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var html = RenderRazorViewToString("_ProductList", products);
+
+            return Json(new { html = html });
+        }
+
+        private string RenderRazorViewToString(string viewName, object model)
+        {
+            ViewData.Model = model;
+            using (var sw = new StringWriter())
+            {
+                var viewResult = ViewEngineCollection.FindPartialView(ControllerContext, viewName);
+                var viewContext = new ViewContext(ControllerContext, viewResult.View, ViewData, TempData, sw);
+                viewResult.View.Render(viewContext, sw);
+                return sw.GetStringBuilder().ToString();
+            }
         }
     }
 }

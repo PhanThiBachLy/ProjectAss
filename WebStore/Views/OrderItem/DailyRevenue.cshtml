@@ -1,0 +1,124 @@
+﻿@model IEnumerable<WebStore.Models.DailyRevenueReport>
+
+@{
+    ViewBag.Title = "Daily Revenue Statistics";
+    var currentMonth = DateTime.Now.Month;
+    var currentYear = DateTime.Now.Year;
+}
+
+<h2>Daily Revenue Statistics</h2>
+
+<div>
+    <label for="month">Select Month:</label>
+    <select id="month" name="month">
+        @foreach (var month in ViewBag.Months as List<SelectListItem>)
+        {
+            <option value="@month.Value" @(month.Value == currentMonth.ToString() ? "selected" : "")>@month.Text</option>
+        }
+    </select>
+
+    <label for="year">Select Year:</label>
+    <input type="number" id="year" value="@currentYear" />
+
+    <button id="loadData">Load Data</button>
+</div>
+
+<canvas id="revenueChart" width="400" height="200"></canvas>
+
+<!-- Include Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    function loadData(month, year) {
+        fetch('@Url.Action("GetDailyRevenue", "Statistics")', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ month: month, year: year })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Data received:", data);
+
+            if (data.length === 0) {
+                console.log("No data available for the selected month and year.");
+                return; // No data to display
+            }
+
+            var ctx = document.getElementById('revenueChart').getContext('2d');
+            var labels = data.map(d => d.Date);
+            var amounts = data.map(d => d.TotalAmount);
+
+            // Clear previous chart if it exists
+            if (window.revenueChart instanceof Chart) {
+                window.revenueChart.destroy(); // Ensure it's a Chart instance
+            }
+
+            // Create a new chart
+            window.revenueChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Total Amount',
+                        data: amounts,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Total Amount ($)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Days'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    return 'Total Amount: $' + tooltipItem.raw;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    }
+
+    // Load data when the document is ready
+    document.addEventListener('DOMContentLoaded', function () {
+        var month = document.getElementById('month').value;
+        var year = document.getElementById('year').value;
+        loadData(month, year); // Initial load with current month and year
+    });
+
+    // Handle button click
+    document.getElementById('loadData').addEventListener('click', function () {
+        var month = document.getElementById('month').value;
+        var year = document.getElementById('year').value;
+        loadData(month, year); // Load data on button click
+    });
+</script>

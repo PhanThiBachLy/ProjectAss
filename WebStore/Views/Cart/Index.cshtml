@@ -32,9 +32,15 @@
                         <tr class="cart-item" data-id="@item.CartDetailId">
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <img src="@item.Product.ImageList.Split(',').FirstOrDefault()"
-                                         alt="@item.Product.ProductName"
-                                         style="width: 80px; height: 80px; object-fit: cover;" />
+                                    @if (!string.IsNullOrEmpty(item.Product.ImageList))
+                                    {
+                                        var images = item.Product.ImageList.Split(',');
+                                        if (images.Length > 0)
+                                        {
+                                            <img src="@Url.Content("~/Content/Images/" + images[0])" alt="@item.Product.ProductName" style="width: 80px; height: 80px; object-fit: cover;" />
+                                        }
+                                    }
+                                    
                                     <div class="ml-3">
                                         <h5>@item.Product.ProductName</h5>
                                         <p class="text-muted">@item.ProductType</p>

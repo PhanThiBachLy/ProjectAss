@@ -243,13 +243,17 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\OrderItemController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\StatisticsController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\CartDetail.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\DailyRevenueReport.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\OrderItem.cs" />
@@ -327,10 +331,16 @@
     <Content Include="Views\Cart\Checkout.cshtml" />
     <Content Include="Views\Order\History.cshtml" />
     <Content Include="Views\Order\Details.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\OrderItem\Index.cshtml" />
+    <Content Include="Views\OrderItem\OrderDetails.cshtml" />
+    <Content Include="Views\OrderItem\DailyRevenue.cshtml" />
+    <Content Include="Views\Home\_ProductList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Images\" />
+    <Folder Include="Views\Statistics\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

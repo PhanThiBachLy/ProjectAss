@@ -227,11 +227,28 @@ namespace WebStore.Controllers
             return RedirectToAction("Profile");
         }
 
-        [Authorize]
+        // Remove [Authorize] attribute
         public ActionResult Logout()
         {
-            System.Web.Security.FormsAuthentication.SignOut();
-            return RedirectToAction("Login");
+            // Sign out authentication
+            FormsAuthentication.SignOut();
+
+            // Clear specific sessions
+            Session["UserId"] = null;
+            Session["Username"] = null;
+            Session["Role"] = null;
+
+            // Clear all sessions
+            Session.Clear();
+            Session.Abandon();
+
+            // Clear authentication cookie
+            HttpCookie cookie = new HttpCookie(FormsAuthentication.FormsCookieName, "");
+            cookie.Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies.Add(cookie);
+
+            // Redirect to home page
+            return RedirectToAction("Index", "Home");
         }
 
         private string HashPassword(string password)

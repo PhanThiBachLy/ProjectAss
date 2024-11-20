@@ -1,0 +1,48 @@
+﻿@model IEnumerable<WebStore.Models.OrderDetail>
+
+@{
+    ViewBag.Title = "Order Details List";
+}
+
+<h2>Order Details</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order Detail ID</th>
+            <th>Product ID</th>
+            <th>Product Type</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total Amount</th>
+            <th>Discount Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var orderDetail in Model)
+        {
+            <tr>
+                <td>@orderDetail.OrderDetailId</td>
+                <td>@orderDetail.ProductId</td>
+                <td>@orderDetail.ProductType</td>
+                <td>@orderDetail.UnitPrice</td>
+                <td>@orderDetail.Quantity</td>
+                <td>@orderDetail.TotalAmount</td>
+                <td>
+                    @if (orderDetail.Voucher != null)
+                    {
+                        @orderDetail.Voucher.DiscountAmount
+                    }
+                    else
+                    {
+                        @:N/A
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    <a href="@Url.Action("Index", "OrderItem")" class="btn btn-secondary">Back to Order Items</a>
+</p>

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<WebStore.Models.User>
+
+@{
+    ViewBag.Title = "User List";
+}
+
+<h2>User List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.FullName</td>
+                <td>@user.Email</td>
+                <td>@user.PhoneNumber</td>
+                <td>@user.Role</td>
+                <td>
+                    @if (user.Role == "Customer")
+                    {
+                        using (Html.BeginForm("Ban", "User", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.Hidden("id", user.UserId)
+                            <button type="submit" class="btn btn-danger">Ban</button>
+                        }
+                    }
+                    else if (user.Role == "Banned")
+                    {
+                        using (Html.BeginForm("Unban", "User", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.Hidden("id", user.UserId)
+                            <button type="submit" class="btn btn-success">Unban</button>
+                        }
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

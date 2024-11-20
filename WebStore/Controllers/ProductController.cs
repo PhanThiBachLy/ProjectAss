@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -67,7 +68,7 @@ namespace WebStore.Controllers
         // GET: Product/Edit/5
         public ActionResult Edit(int id)
         {
-            var product = db.Product.Find(id);
+            var product = db.Product.Include(p => p.Category).FirstOrDefault(p => p.ProductId == id);
             if (product == null)
             {
                 return HttpNotFound();
@@ -78,41 +79,101 @@ namespace WebStore.Controllers
 
         // POST: Product/Edit/5
         [HttpPost]
-        public ActionResult Edit(Product product, IEnumerable<HttpPostedFileBase> ImageList)
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Product product, IEnumerable<HttpPostedFileBase> NewImages)
         {
             if (ModelState.IsValid)
             {
-
-                // Process the uploaded files
-                if (ImageList != null && ImageList.Any())
+                try
                 {
-                    var imagePaths = new List<string>();
+                    var existingProduct = db.Product.AsNoTracking()
+                        .FirstOrDefault(p => p.ProductId == product.ProductId);
 
-                    foreach (var file in ImageList)
+                    if (existingProduct == null)
                     {
-                        if (file != null && file.ContentLength > 0)
-                        {
-                            var fileName = Path.GetFileName(file.FileName);
-                            var path = Path.Combine(Server.MapPath("~/Content/Images/"), fileName);
-                            file.SaveAs(path);
-                            imagePaths.Add(fileName);
-                        }
+                        return HttpNotFound();
                     }
 
-                    // Set the ImageList property to the saved file names
-                    product.ImageList = string.Join(",", imagePaths);
-                }
+                    // Xử lý ảnh mới nếu có
+                    if (NewImages != null && NewImages.Any(f => f != null && f.ContentLength > 0))
+                    {
+                        // Xóa ảnh cũ nếu cần
+                        if (!string.IsNullOrEmpty(existingProduct.ImageList))
+                        {
+                            foreach (var oldImage in existingProduct.ImageList.Split(','))
+                            {
+                                var oldPath = Path.Combine(Server.MapPath("~/Content/Images/"), oldImage);
+                                if (System.IO.File.Exists(oldPath))
+                                {
+                                    System.IO.File.Delete(oldPath);
+                                }
+                            }
+                        }
 
-                db.Entry(product).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                        // Lưu ảnh mới
+                        var imagePaths = new List<string>();
+                        foreach (var file in NewImages)
+                        {
+                            if (file != null && file.ContentLength > 0)
+                            {
+                                // Tạo tên file unique để tránh trùng lặp
+                                var fileName = $"{Path.GetFileNameWithoutExtension(file.FileName)}_{DateTime.Now.Ticks}{Path.GetExtension(file.FileName)}";
+                                var path = Path.Combine(Server.MapPath("~/Content/Images/"), fileName);
+
+                                // Kiểm tra kích thước và định dạng file
+                                if (file.ContentLength > 5 * 1024 * 1024) // 5MB
+                                {
+                                    ModelState.AddModelError("", $"File {file.FileName} vượt quá kích thước cho phép (5MB)");
+                                    continue;
+                                }
+
+                                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+                                var fileExtension = Path.GetExtension(fileName).ToLower();
+                                if (!allowedExtensions.Contains(fileExtension))
+                                {
+                                    ModelState.AddModelError("", $"File {file.FileName} không đúng định dạng");
+                                    continue;
+                                }
+
+                                file.SaveAs(path);
+                                imagePaths.Add(fileName);
+                            }
+                        }
+
+                        if (imagePaths.Any())
+                        {
+                            product.ImageList = string.Join(",", imagePaths);
+                        }
+                    }
+                    else
+                    {
+                        // Giữ nguyên danh sách ảnh cũ nếu không có ảnh mới
+                        product.ImageList = existingProduct.ImageList;
+                    }
+
+                    db.Entry(product).State = EntityState.Modified;
+                    db.SaveChanges();
+
+                    TempData["SuccessMessage"] = "Cập nhật sản phẩm thành công!";
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Có lỗi xảy ra khi cập nhật sản phẩm: " + ex.Message);
+                }
             }
 
-            // Return to the same view with validation errors
             ViewBag.CategoryId = new SelectList(db.Category, "CategoryId", "CategoryName", product.CategoryId);
             return View(product);
         }
-
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
         // GET: Product/Delete/5
         public ActionResult Delete(int id)
         {
