@@ -33,7 +33,7 @@ namespace WebStore.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=localhost;Database=Store;Integrated Security=True;TrustServerCertificate=true");
+                optionsBuilder.UseSqlServer("Server=BachLy\\SQLEXPRESS01;Database=Store1;Integrated Security=True;TrustServerCertificate=true");
             }
         }
 

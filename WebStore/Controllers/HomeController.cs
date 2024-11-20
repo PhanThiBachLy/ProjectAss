@@ -16,9 +16,29 @@ namespace WebStore.Controllers
         public ActionResult Index()
         {
             ViewBag.Categories = _context.Category.ToList();
-            var products = _context.Product.Include(p => p.Category).ToList();
+            var products = _context.Product.Include(p => p.Category).ToList(); // Initial load
             return View(products);
         }
+
+        
+
+        private string RenderPartialViewToString(string viewName, object model)
+        {
+            if (string.IsNullOrEmpty(viewName))
+                viewName = ControllerContext.RouteData.GetRequiredString("action");
+
+            ViewData.Model = model;
+
+            using (var sw = new StringWriter())
+            {
+                var viewResult = ViewEngines.Engines.FindPartialView(ControllerContext, viewName);
+                var viewContext = new ViewContext(ControllerContext, viewResult.View, ViewData, TempData, sw);
+                viewResult.View.Render(viewContext, sw);
+                viewResult.ViewEngine.ReleaseView(ControllerContext, viewResult.View);
+                return sw.GetStringBuilder().ToString();
+            }
+        }
+
 
         public ActionResult About()
         {

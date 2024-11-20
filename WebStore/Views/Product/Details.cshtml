@@ -176,15 +176,7 @@
                 <i class="fas fa-cart-plus"></i> Add to Cart
             </button>
 
-            @using (Html.BeginForm("BuyNow", "Order", FormMethod.Post, new { id = $"buyNowForm{Model.ProductId}" }))
-            {
-                @Html.AntiForgeryToken()
-                @Html.Hidden("productId", Model.ProductId)
-                @Html.Hidden("quantity", 1, new { id = $"buyNowQuantity{Model.ProductId}" })
-                <button type="submit" class="btn-buy-now">
-                    <i class="fas fa-bolt"></i> Buy Now
-                </button>
-            }
+            
         </div>
 
         <div class="specifications">

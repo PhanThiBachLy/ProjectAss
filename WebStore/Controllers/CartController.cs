@@ -38,7 +38,9 @@ namespace WebStore.Controllers
         [HttpPost]
         public ActionResult AddToCart(int productId, int quantity = 1)
         {
-            var userId = GetCurrentUserId();
+            try
+            {
+                var userId = GetCurrentUserId();
 
             // Find or create cart for user
             var cart = _context.Cart
@@ -110,9 +112,20 @@ namespace WebStore.Controllers
                 success = true,
                 cartCount = cartItemCount
             }, JsonRequestBehavior.AllowGet);
+        
         }
+            catch (UnauthorizedAccessException)
+            {
+                return Json(new
+                {
+                    success = false,
+                    requireLogin = true,
+                    message = "Please login to add items to cart"
+                }, JsonRequestBehavior.AllowGet);
+            }
+            }
 
-        [HttpPost]
+            [HttpPost]
         public ActionResult BuyNow(int productId, int quantity = 1)
         {
             var userId = GetCurrentUserId();
@@ -162,8 +175,12 @@ namespace WebStore.Controllers
 
         private int GetCurrentUserId()
         {
-            var user = _context.User.FirstOrDefault(p => p.UserId == (int)HttpContext.Session["UserId"]);
-            return user.UserId;
+            var userId = HttpContext.Session["UserId"] as int?;
+            if (!userId.HasValue)
+            {
+                throw new UnauthorizedAccessException("Please login to continue");
+            }
+            return userId.Value;
         }
 
         protected override void Dispose(bool disposing)
