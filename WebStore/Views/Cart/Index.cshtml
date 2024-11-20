@@ -1,0 +1,128 @@
+﻿@model WebStore.Models.Cart
+
+@{
+    ViewBag.Title = "Shopping Cart";
+}
+
+<div class="container">
+    <h2>Shopping Cart</h2>
+
+    @if (Model == null || !Model.CartDetail.Any())
+    {
+        <div class="alert alert-info">
+            Your cart is empty. <a href="@Url.Action("Index", "Home")">Continue shopping</a>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.CartDetail)
+                    {
+                        <tr class="cart-item" data-id="@item.CartDetailId">
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="@item.Product.ImageList.Split(',').FirstOrDefault()"
+                                         alt="@item.Product.ProductName"
+                                         style="width: 80px; height: 80px; object-fit: cover;" />
+                                    <div class="ml-3">
+                                        <h5>@item.Product.ProductName</h5>
+                                        <p class="text-muted">@item.ProductType</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>$@item.UnitPrice.ToString("N2")</td>
+                            <td>
+                                <input type="number"
+                                       class="form-control quantity-input"
+                                       style="width: 80px"
+                                       value="@item.Quantity"
+                                       min="1"
+                                       max="99"
+                                       data-id="@item.CartDetailId" />
+                            </td>
+                            <td>$<span class="item-total">@item.TotalAmount</span></td>
+                            <td>
+                                <button class="btn btn-danger btn-remove" data-id="@item.CartDetailId">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-right"><strong>Total:</strong></td>
+                        <td colspan="2">$<span id="cart-total">@Model.TotalPayment</span></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">
+                Continue Shopping
+            </a>
+            <a href="@Url.Action("Checkout", "Cart")" class="btn btn-primary">
+                Proceed to Checkout
+            </a>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Cập nhật số lượng
+            $('.quantity-input').change(function () {
+                var $input = $(this);
+                var cartDetailId = $input.data('id');
+                var quantity = $input.val();
+
+                $.ajax({
+                    url: '@Url.Action("UpdateQuantity", "Cart")',
+                    type: 'POST',
+                    data: { cartDetailId: cartDetailId, quantity: quantity },
+                    success: function (response) {
+                        if (response.success) {
+                            var $row = $input.closest('tr');
+                            $row.find('.item-total').text(response.totalAmount.toFixed(2));
+                            $('#cart-total').text(response.cartTotal.toFixed(2));
+                        }
+                    }
+                });
+            });
+
+            // Xóa sản phẩm
+            $('.btn-remove').click(function () {
+                var cartDetailId = $(this).data('id');
+                var $row = $(this).closest('tr');
+
+                $.ajax({
+                    url: '@Url.Action("RemoveItem", "Cart")',
+                    type: 'POST',
+                    data: { cartDetailId: cartDetailId },
+                    success: function (response) {
+                        if (response.success) {
+                            $row.remove();
+                            // Reload trang nếu giỏ hàng trống
+                            if ($('.cart-item').length === 0) {
+                                location.reload();
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

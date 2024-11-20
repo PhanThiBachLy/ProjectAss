@@ -7,9 +7,11 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <style>
+        /* Giữ nguyên các style cũ */
         .navbar {
             background-color: #a8e6cf !important;
         }
+
         .navbar-nav {
             display: flex;
             align-items: center;
@@ -19,6 +21,7 @@
             display: flex;
             align-items: center;
         }
+
         .nav-link, .navbar-brand {
             color: #333 !important;
         }
@@ -63,6 +66,7 @@
                 .nav-button:hover::after {
                     background-color: rgba(0, 0, 0, 0.4);
                 }
+
         .welcome-text {
             color: white;
             margin: 0 10px;
@@ -70,6 +74,7 @@
             display: flex;
             align-items: center;
         }
+
         .user-menu {
             display: flex;
             align-items: center;
@@ -104,18 +109,22 @@
                     }
                 </ul>
                 <ul class="navbar-nav">
-
-
                     @if (Session["UserName"] != null)
                     {
                         <li>
-                            @Html.ActionLink("Cart", "Cart", "Home", new { area = "" }, new { @class = "nav-button" })
+                            @Html.ActionLink("Cart", "Index", "Cart",
+                                new { userId = Session["UserID"] },
+                                new { @class = "nav-button" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Order History", "History", "Order",
+                                new { id = Session["UserID"] },
+                                new { @class = "nav-button" })
                         </li>
                         <li class="user-menu">
                             <span class="welcome-text">Welcome, @Session["UserName"]</span>
                             @Html.ActionLink("Logout", "Logout", "Account", new { area = "" }, new { @class = "nav-button" })
                         </li>
-
                     }
                     else
                     {
@@ -137,7 +146,8 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

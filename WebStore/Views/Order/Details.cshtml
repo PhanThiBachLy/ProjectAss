@@ -1,0 +1,107 @@
+﻿@model List<WebStore.Models.OrderDetail>
+
+<div class="container">
+    <h2>Chi tiết đơn hàng #@ViewBag.OrderId</h2>
+
+    <div class="order-summary mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Thông tin đơn hàng</h5>
+            </div>
+            <div class="card-body">
+                @if (Model.Any() && Model.First().Order != null)
+                {
+                    <p><strong>Ngày tạo:</strong> @Model.First().Order.CreatedDate</p>
+                    <p><strong>Địa chỉ giao hàng:</strong> @Model.First().Order.ShippingAddress</p>
+                    <p><strong>Lời nhắn:</strong> @Model.First().Order.MessageForSeller</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="order-details">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Loại</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <h6>@(item.Product?.ProductName ?? "N/A")</h6>
+                            </div>
+                        </td>
+                        <td>@item.ProductType</td>
+                        <td>@(item.UnitPrice.ToString("N0") ?? "0") đ</td>
+                        <td>@item.Quantity</td>
+                        <td>@(item.TotalAmount?.ToString("N0") ?? "0") đ</td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                @if (Model.Any())
+                {
+                    var firstOrder = Model.First().Order;
+                    <tr>
+                        <td colspan="4" class="text-end"><strong>Tổng tiền hàng:</strong></td>
+                        <td>@Model.Sum(x => x.TotalAmount)?.ToString("N0") đ</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-end"><strong>Phí vận chuyển:</strong></td>
+                        <td>@(firstOrder?.ShippingFee?.ToString("N0") ?? "0") đ</td>
+                    </tr>
+                    if (Model.First().Voucher != null)
+                    {
+                        <tr>
+                            <td colspan="4" class="text-end"><strong>Giảm giá:</strong></td>
+                            <td>-@(Model.First().Voucher.DiscountAmount.ToString("N0") ?? "0") đ</td>
+                        </tr>
+                    }
+                    <tr>
+                        <td colspan="4" class="text-end"><strong>Tổng thanh toán:</strong></td>
+                        <td><strong>@(firstOrder?.GrandTotal?.ToString("N0") ?? "0") đ</strong></td>
+                    </tr>
+                }
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<style>
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .order-summary {
+        background-color: #f8f9fa;
+        border-radius: 5px;
+    }
+
+    .product-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .table th {
+        background-color: #f8f9fa;
+    }
+
+    .table tfoot {
+        background-color: #f8f9fa;
+    }
+
+        .table tfoot tr:last-child {
+            font-size: 1.1em;
+            color: #dc3545;
+        }
+</style>

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebStore.Models;
+using System.IO;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebStore.Controllers
 {
@@ -13,7 +15,7 @@ namespace WebStore.Controllers
 
         public ActionResult Index()
         {
-            var products = _context.Product.ToList();
+            var products = _context.Product.Include(p => p.Category).ToList();
             return View(products);
         }
 

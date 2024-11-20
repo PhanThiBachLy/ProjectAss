@@ -113,8 +113,8 @@ namespace WebStore.Controllers
             return View(product);
         }
 
-    // GET: Product/Delete/5
-    public ActionResult Delete(int id)
+        // GET: Product/Delete/5
+        public ActionResult Delete(int id)
         {
             var product = db.Product.Find(id);
             if (product == null)
@@ -133,5 +133,16 @@ namespace WebStore.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-    }
+    
+    public ActionResult Details(int id)
+        {
+            var product = db.Product.Include(p => p.Category)
+                                  .FirstOrDefault(p => p.ProductId == id);
+            if (product == null)
+            {
+                return HttpNotFound();
+            }
+            return View(product);
+        }
+    } 
 }

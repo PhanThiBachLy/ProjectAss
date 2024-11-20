@@ -1,0 +1,62 @@
+﻿@model IEnumerable<WebStore.Models.OrderItem>
+
+@{
+    ViewData["Title"] = "Order History";
+}
+
+<h2>Order History</h2>
+
+<div class="container">
+    @foreach (var order in Model)
+    {
+        <div class="card mb-3">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h5>Order #@order.OrderId</h5>
+                        <small>@order.CreatedDate?.ToString("dd/MM/yyyy HH:mm")</small>
+                    </div>
+                    @if (order.Voucher != null)
+                    {
+                        <div>
+                            <span class="badge bg-success">
+                                Discount: @order.Voucher.DiscountAmount%
+                            </span>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="card-body">
+                @foreach (var item in order.OrderDetail)
+                {
+                    <div class="row mb-2">
+                        <div class="col-2">
+                            <img src="@item.Product.ImageList?.Split(',').FirstOrDefault()"
+                                 class="img-fluid" alt="@item.Product.ProductName">
+                        </div>
+                        <div class="col-6">
+                            <h6>@item.Product.ProductName</h6>
+                            <small>Type: @item.ProductType</small>
+                            <small>Quantity: @item.Quantity</small>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p>@item.UnitPrice</p>
+                            <p>Total: @item.TotalAmount</p>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-between">
+                    <a href="@Url.Action("Details", new { id = order.OrderId })"
+                       class="btn btn-primary">View Details</a>
+                    <div class="text-end">
+                        <p class="mb-0">Subtotal: @order.TotalAmount</p>
+                        <p class="mb-0">Shipping Fee: @order.ShippingFee</p>
+                        <h5>Grand Total: @order.GrandTotal</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

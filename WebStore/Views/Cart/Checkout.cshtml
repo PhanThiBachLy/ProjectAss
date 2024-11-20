@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Checkout</h2>
+        <form id="checkoutForm" method="post" action="/Cart/CreateOrder">
+            <div class="row">
+                <!-- Thông tin giao hàng -->
+                <div class="col-md-7">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h4>Shipping Information</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group mb-3">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" name="fullName" required>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="shippingAddress">Delivery Address</label>
+                                <textarea class="form-control" id="shippingAddress" name="shippingAddress" rows="3" required></textarea>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="messageForSeller">Message for Seller (Optional)</label>
+                                <textarea class="form-control" id="messageForSeller" name="messageForSeller" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần Voucher -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h4>Voucher</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <select class="form-control" id="voucherId" name="voucherId">
+                                    <option value="">Select a voucher</option>
+                                    <!-- Vouchers sẽ được load động từ database -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tổng quan đơn hàng -->
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Order Summary</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="cartItems">
+                                <!-- Cart items sẽ được load động -->
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal</span>
+                                <strong id="subtotal">0₫</strong>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Shipping Fee</span>
+                                <strong id="shippingFee">30,000₫</strong>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2 text-success">
+                                <span>Discount</span>
+                                <strong id="discount">0₫</strong>
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex justify-content-between">
+                                <span class="h5">Total</span>
+                                <strong class="h5" id="grandTotal">30,000₫</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            loadCartItems();
+            loadVouchers();
+
+            $('#voucherId').change(function () {
+                calculateTotal();
+            });
+
+            // Xử lý submit form
+            $('#checkoutForm').on('submit', function (e) {
+                e.preventDefault();
+
+                const formData = {
+                    fullName: $('#fullName').val(),
+                    phoneNumber: $('#phoneNumber').val(),
+                    shippingAddress: $('#shippingAddress').val(),
+                    messageForSeller: $('#messageForSeller').val(),
+                    voucherId: $('#voucherId').val() || null
+                };
+
+                $.ajax({
+                    url: '/Cart/CreateOrder',
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        if (response.success) {
+                            Swal.fire({
+                                title: 'Đặt hàng thành công!',
+                                text: 'Đơn hàng của bạn đã được tạo thành công. Mã đơn hàng: ' + response.orderId,
+                                icon: 'success',
+                                confirmButtonText: 'OK'
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    window.location.href = '/Order/Detail/' + response.orderId;
+                                }
+                            });
+                        } else {
+                            Swal.fire({
+                                title: 'Lỗi!',
+                                text: response.message || 'Có lỗi xảy ra khi xử lý đơn hàng',
+                                icon: 'error',
+                                confirmButtonText: 'OK'
+                            });
+                        }
+                    },
+                    error: function () {
+                        Swal.fire({
+                            title: 'Lỗi!',
+                            text: 'Không thể kết nối với máy chủ',
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                });
+            });
+
+            function loadCartItems() {
+                $.ajax({
+                    url: '/Cart/GetCartItems',
+                    type: 'GET',
+                    success: function (data) {
+                        let cartHtml = '';
+                        let subtotal = 0;
+
+                        data.forEach(item => {
+                            cartHtml += `
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div>
+                                            <h6 class="mb-0">${item.ProductName}</h6>
+                                            <small class="text-muted">Quantity: ${item.Quantity}</small>
+                                        </div>
+                                        <span>${formatCurrency(item.TotalAmount)}</span>
+                                    </div>
+                                `;
+                            subtotal += item.TotalAmount;
+                        });
+
+                        $('#cartItems').html(cartHtml);
+                        $('#subtotal').text(formatCurrency(subtotal));
+                        calculateTotal();
+                    }
+                });
+            }
+
+            function loadVouchers() {
+                $.ajax({
+                    url: '/Voucher/GetAvailableVouchers',
+                    type: 'GET',
+                    success: function (data) {
+                        let voucherHtml = '<option value="">Select a voucher</option>';
+                        data.forEach(voucher => {
+                            voucherHtml += `
+                                    <option value="${voucher.VoucherID}">
+                                        ${voucher.DiscountAmount}% off - Max ${formatCurrency(voucher.MaxDiscountValue)}
+                                    </option>
+                                `;
+                        });
+                        $('#voucherId').html(voucherHtml);
+                    }
+                });
+            }
+
+            function calculateTotal() {
+                const subtotal = parseFloat($('#subtotal').text().replace('₫', '').replace(',', ''));
+                const shippingFee = 30000;
+                let discount = 0;
+
+                const selectedVoucherId = $('#voucherId').val();
+                if (selectedVoucherId) {
+                    $.ajax({
+                        url: '/Order/CalculateDiscount',
+                        type: 'POST',
+                        data: {
+                            voucherId: selectedVoucherId,
+                            subtotal: subtotal
+                        },
+                        success: function (discountAmount) {
+                            discount = discountAmount;
+                            $('#discount').text('-' + formatCurrency(discount));
+                            const grandTotal = subtotal + shippingFee - discount;
+                            $('#grandTotal').text(formatCurrency(grandTotal));
+                        }
+                    });
+                } else {
+                    const grandTotal = subtotal + shippingFee;
+                    $('#grandTotal').text(formatCurrency(grandTotal));
+                }
+            }
+
+            function formatCurrency(amount) {
+                return new Intl.NumberFormat('vi-VN', {
+                    style: 'currency',
+                    currency: 'VND'
+                }).format(amount);
+            }
+        });
+    </script>
+</body>
+</html>

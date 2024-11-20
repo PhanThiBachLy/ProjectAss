@@ -3,48 +3,112 @@
   "WorkspaceRootPath": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|c:\\all\\download\\projectforhublift-main\\webstore\\webstore\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|c:\\all\\download\\projectforhublift-main\\webstore\\webstore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\order\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\order\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\storedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\storedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\cartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\cartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,20 +119,12 @@
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -83,28 +139,12 @@
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\cartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\cartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -119,14 +159,6 @@
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|C:\\All\\Download\\ProjectForHublift-main\\WebStore\\webstore\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{8DCC6D0B-F3D4-4F51-A3DF-C2294D9910AC}|WebStore\\WebStore.csproj|solutionrelative:webstore\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
@@ -138,7 +170,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 69,
+          "SelectedChildIndex": 65,
           "Children": [
             {
               "$type": "Bookmark",
@@ -398,152 +430,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\User.cs",
-              "RelativeDocumentMoniker": "WebStore\\Models\\User.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\User.cs",
-              "RelativeToolTip": "WebStore\\Models\\User.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:22:53.904Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebStore\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebStore\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAkwGUAAAAbAAAAAAAAAA==",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Order\\Details.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Order\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T22:39:57.35Z"
+              "WhenOpened": "2024-11-20T01:45:21.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "WebStore\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "WebStore\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAkwEUAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAkwFkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T22:55:44.368Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "WebStore\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "WebStore\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAcwEwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:22:53.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "WebStore\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "WebStore\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:22:53.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebStore\\Views\\Product\\Index.cshtml",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "WebStore\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T22:22:53.419Z",
+              "WhenOpened": "2024-11-19T22:55:44.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebStore\\Views\\Product\\Create.cshtml",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "WebStore\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAA8AAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T22:22:53.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "WebStore\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "WebStore\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAswEoAAAAYAAAAAAAAAA==",
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "WebStore\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "WebStore\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwC8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:43:26.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "packages.config",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\packages.config",
-              "RelativeDocumentMoniker": "WebStore\\packages.config",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\packages.config",
-              "RelativeToolTip": "WebStore\\packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-19T22:44:53.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PasswordHelper.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\PasswordHelper.cs",
-              "RelativeDocumentMoniker": "WebStore\\Models\\PasswordHelper.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\PasswordHelper.cs",
-              "RelativeToolTip": "WebStore\\Models\\PasswordHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:46:59.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "WebStore\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "WebStore\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAkwGMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T22:56:54.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "WebStore\\Models\\LoginViewModel.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\LoginViewModel.cs",
-              "RelativeToolTip": "WebStore\\Models\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:47:52.454Z"
+              "WhenOpened": "2024-11-20T01:20:26.267Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebStore\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebStore\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:22:53.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "WebStore\\Models\\RegisterViewModel.cs",
@@ -555,19 +491,307 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "StoreDbContext.cs",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\StoreDbContext.cs",
               "RelativeDocumentMoniker": "WebStore\\Models\\StoreDbContext.cs",
               "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\StoreDbContext.cs",
               "RelativeToolTip": "WebStore\\Models\\StoreDbContext.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAkwPkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAANcAAAAAAAAAAAAkwPAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T22:22:53.895Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Order\\History.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Order\\History.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Order\\History.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Order\\History.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T01:27:39.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Product\\Delete.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Delete.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Product\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T22:22:53.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAkwHcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T22:39:57.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Cart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Cart\\Checkout.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Cart\\Checkout.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Cart\\Checkout.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAPIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T01:00:26.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebStore\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebStore\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:22:53.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebStore\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebStore\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswDwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:43:26.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "WebStore\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\CartController.cs",
+              "RelativeToolTip": "WebStore\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAswKQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T23:55:28.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T00:44:02.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAlwDQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T22:56:54.17Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "WebStore\\Models\\Product.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\Product.cs",
+              "RelativeToolTip": "WebStore\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:22:53.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Product\\Details.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAkwNUAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T23:52:33.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwF0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T22:22:53.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "WebStore\\Models\\OrderDetail.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "WebStore\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:22:53.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\User.cs",
+              "RelativeDocumentMoniker": "WebStore\\Models\\User.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\User.cs",
+              "RelativeToolTip": "WebStore\\Models\\User.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:22:53.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "WebStore\\Models\\Cart.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\Cart.cs",
+              "RelativeToolTip": "WebStore\\Models\\Cart.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwBEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:22:53.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "WebStore\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\OrderItem.cs",
+              "RelativeToolTip": "WebStore\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T00:03:56.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CartDetail.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\CartDetail.cs",
+              "RelativeDocumentMoniker": "WebStore\\Models\\CartDetail.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\CartDetail.cs",
+              "RelativeToolTip": "WebStore\\Models\\CartDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:22:53.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwA8AAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T22:22:52.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T22:22:53.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebStore\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "WebStore\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAEBlwCwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T22:22:53.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "WebStore\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "WebStore\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAcwEwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:22:53.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PasswordHelper.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\PasswordHelper.cs",
+              "RelativeDocumentMoniker": "WebStore\\Models\\PasswordHelper.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\PasswordHelper.cs",
+              "RelativeToolTip": "WebStore\\Models\\PasswordHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:46:59.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\packages.config",
+              "RelativeDocumentMoniker": "WebStore\\packages.config",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\packages.config",
+              "RelativeToolTip": "WebStore\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-19T22:44:53.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "WebStore\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "WebStore\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:47:52.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Global.asax.cs",
               "RelativeDocumentMoniker": "WebStore\\Global.asax.cs",
@@ -579,31 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "WebStore\\Models\\Product.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\Product.cs",
-              "RelativeToolTip": "WebStore\\Models\\Product.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA2wC8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:22:53.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebStore\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebStore\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:22:53.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 32,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Category\\Edit.cshtml",
               "RelativeDocumentMoniker": "WebStore\\Views\\Category\\Edit.cshtml",
@@ -615,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 34,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "WebStore\\Views\\_ViewStart.cshtml",
@@ -627,19 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebStore\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebStore\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAACYAAAAAAAAAAAAQwF8AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T22:22:53.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 35,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\Category.cs",
               "RelativeDocumentMoniker": "WebStore\\Models\\Category.cs",
@@ -651,67 +839,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Edit.cshtml",
-              "RelativeDocumentMoniker": "WebStore\\Views\\Product\\Edit.cshtml",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Edit.cshtml",
-              "RelativeToolTip": "WebStore\\Views\\Product\\Edit.cshtml",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAcwA8AAABhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
-              "WhenOpened": "2024-11-19T22:22:52.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Delete.cshtml",
-              "RelativeDocumentMoniker": "WebStore\\Views\\Product\\Delete.cshtml",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Product\\Delete.cshtml",
-              "RelativeToolTip": "WebStore\\Views\\Product\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
-              "WhenOpened": "2024-11-19T22:22:53.898Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 33,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Category\\Create.cshtml",
               "RelativeDocumentMoniker": "WebStore\\Views\\Category\\Create.cshtml",
               "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Category\\Create.cshtml",
               "RelativeToolTip": "WebStore\\Views\\Category\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-19T22:22:53.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 31,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "WebStore\\Views\\Category\\Index.cshtml",
               "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Category\\Index.cshtml",
               "RelativeToolTip": "WebStore\\Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAIBZwBcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAGBnwBcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-19T22:22:53.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CartDetail.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\CartDetail.cs",
-              "RelativeDocumentMoniker": "WebStore\\Models\\CartDetail.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\CartDetail.cs",
-              "RelativeToolTip": "WebStore\\Models\\CartDetail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:22:53.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 36,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Category\\Delete.cshtml",
               "RelativeDocumentMoniker": "WebStore\\Views\\Category\\Delete.cshtml",
@@ -723,7 +875,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 37,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "WebStore\\Views\\Home\\About.cshtml",
@@ -735,7 +887,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 38,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "WebStore\\Views\\Home\\Contact.cshtml",
@@ -747,31 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "WebStore\\Models\\OrderDetail.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\OrderDetail.cs",
-              "RelativeToolTip": "WebStore\\Models\\OrderDetail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:22:53.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "WebStore\\Models\\Cart.cs",
-              "ToolTip": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Models\\Cart.cs",
-              "RelativeToolTip": "WebStore\\Models\\Cart.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T22:22:53.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 39,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\All\\Download\\ProjectForHublift-main\\WebStore\\WebStore\\Web.config",
               "RelativeDocumentMoniker": "WebStore\\Web.config",
